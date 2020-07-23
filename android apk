@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/data"
+            android:textSize="40sp"
+            android:background="@color/white"
+            android:layout_gravity="end|bottom"
+            android:textColor="@color/colorDark"
+            />
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/output"
+            android:textSize="45sp"
+            android:background="@color/white"
+            android:layout_gravity="end|center"
+            android:textColor="@color/colorDark"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/radical"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_operations"
+                android:text="@string/rad"
+                android:textColor="@color/darkpurple"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/degree"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="2"
+                android:background="@drawable/ripple_operations"
+                android:text="@string/deg"
+                android:textColor="@color/darkpurple"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/xnot"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_operations"
+                android:text="@string/xx"
+                android:textColor="@color/darkpurple"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bracket1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/riplle_basic_opr"
+                android:text="@string/br1"
+                android:textColor="@color/darkpurple"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bracket2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/riplle_basic_opr"
+                android:text="@string/br2"
+                android:textColor="@color/darkpurple"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/percent"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/riplle_basic_opr"
+                android:text="@string/percent"
+                android:textColor="@color/darkpurple"
+                android:textSize="30sp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/Inv"
+            android:background="@drawable/ripple_operations"
+            android:textSize="30sp"
+            android:textColor="@color/darkpurple"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/sin"
+            android:background="@drawable/ripple_operations"
+            android:textSize="30sp"
+            android:textColor="@color/darkpurple"/>
+        <Button
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="@string/num7"
+        android:background="@drawable/riplle_number"
+        android:textSize="30sp"
+        android:textColor="@color/darkpurple"/>
+        <Button
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="@string/num8"
+        android:background="@drawable/riplle_number"
+        android:textSize="30sp"
+        android:textColor="@color/darkpurple"/>
+        <Button
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="@string/num9"
+        android:background="@drawable/riplle_number"
+        android:textSize="30sp"
+        android:textColor="@color/darkpurple"/>
+        <Button
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="@string/divide"
+        android:background="@drawable/riplle_basic_opr"
+        android:textSize="30sp"
+        android:textColor="@color/darkpurple"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/per"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/cos"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/num4"
+                android:background="@drawable/riplle_number"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/num5"
+                android:background="@drawable/riplle_number"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/num6"
+                android:background="@drawable/riplle_number"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/multiply"
+                android:background="@drawable/riplle_basic_opr"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/e"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/tan"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/num1"
+                android:background="@drawable/riplle_number"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/num2"
+                android:background="@drawable/riplle_number"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/num3"
+                android:background="@drawable/riplle_number"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/minus"
+                android:background="@drawable/riplle_basic_opr"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/AC"
+            android:background="@drawable/ripple_operations"
+            android:textSize="30sp"
+            android:textColor="@color/darkpurple"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/exp"
+            android:background="@drawable/ripple_operations"
+            android:textSize="30sp"
+            android:textColor="@color/darkpurple"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/num0"
+            android:background="@drawable/riplle_number"
+            android:textSize="30sp"
+            android:textColor="@color/darkpurple"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/dot"
+            android:background="@drawable/riplle_number"
+            android:textSize="30sp"
+            android:textColor="@color/darkpurple"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/equal"
+            android:background="@drawable/button"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/plus"
+            android:background="@drawable/riplle_basic_opr"
+            android:textSize="30sp"
+            android:textColor="@color/darkpurple"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/Ans"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/log"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/ln"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/root"
+                android:background="@drawable/ripple_operations"
+                android:textSize="25sp"
+                android:textColor="@color/darkpurple"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/expo"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:background="@drawable/ripple_operations"
+                android:textSize="30sp"
+                android:textColor="@color/darkpurple"/>
+        </LinearLayout>
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<! @drawable/riplle_number.xml>
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/light_blue">
+    <item>
+        <shape android:shape="rectangle">
+       <solid android:color="@color/baby"/>
+        </shape>
+
+    </item>
+</ripple>
+<!@drawable /ripple_operations.xml>
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/purple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pumpkin"/>
+        </shape>
+    </item>
+
+</selector>
+<!@drawable ripple_basic_opr>
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/purple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pumpkin"/>
+        </shape>
+    </item>
+
+</selector>
+<!@darawable/ gradient.xml>
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/purple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pumpkin"/>
+        </shape>
+    </item>
+<!drawable/button>
+</selector>
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="false"
+        android:state_enabled="true"
+        android:drawable="@drawable/gradient">
+
+    </item>
+</selector>
+<!@drawable/color.xml>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+<color name="colorPrimaryDark">#111133DD</color>
+    <color name="colorDark">#850531</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#E33B74</color>
+    <color name="purple">#9C27B0</color>
+    <color name="darkpurple">#50025E</color>
+    <color name="light_blue">#DCA2B6</color>
+    <color name="yellow">#FDE722</color>
+    <color name="light_green">#84F106</color>
+    <color name="baby">#C4F893B5</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#F15B2B</color>
+    <color name="mango">#FAC937</color>
+    <color name="pumpkin">#F10B59</color>
+    <color name="black">#1D1D1D</color>
+    <color name="blue">#081A7C</color>
+</resources>
+<!@drawable/string.xml>
+<resources>
+    <string name="app_name">task2</string>
+    <string name="data">2*11</string>
+    <string name="output">22</string>
+    <string name="rad">rad</string>
+    <string name="Inv">INV</string>
+    <string name="t">Pi</string>
+    <string name="e">e</string>
+    <string name="Ans">Ans</string>
+    <string name="AC">AC</string>
+    <string name="ln">ln</string>
+    <string name="expo">x^y</string>
+    <string name="tan">tan</string>
+    <string name="cos">cos</string>
+    <string name="sin">sin</string>
+    <string name="deg">deg</string>
+    <string name="xx">X!</string>
+    <string name="br2">)</string>
+    <string name="br1">(</string>
+    <string name="dot">.</string>
+    <string name="num0">0</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num9">9</string>
+    <string name="num6">6</string>
+    <string name="num3">3</string>
+    <string name="equal">=</string>
+    <string name="exp">exp</string>
+    <string name="clear">C</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">X</string>
+    <string name="divide">/</string>
+    <string name="percent">%</string>
+    <string name="per">pi</string>
+    <string name="root">root</string>
+    <string name="log">lg</string>
+    <string name="ans">as</string>
+</resources>
